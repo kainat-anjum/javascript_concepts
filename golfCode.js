@@ -19,3 +19,4 @@ function golfScore(par, strokes) {
 
 var result = golfScore(4, 2);
 console.log(result);
+

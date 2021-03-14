@@ -6,21 +6,16 @@ var obj = [
   { id: 3, name: "bell" },
 ];
 
-var newArr = [];
-var unique;
+const map = new Map();
+const result = [];
+for (var i = 0; i < obj.length; i++) {
+  if (!map.has(obj[i].id)) {
+    map.set(obj[i].id, true);
+    result.push({
+      id: obj[i].id,
+      name: obj[i].name,
+    });
+  }
+}
+console.log(result);
 
-var uniqueObject = (data) => {
-  data.map((data, index) => {
-    newArr.push(data.id);
-  });
-  return newArr;
-};
-
-var names = [];
-var myObj = (data) => {
-  var x = data.filter((value, index) => data.indexOf(value) === index);
-  return x;
-};
-
-uniqueObject(obj);
-console.log("unique", myObj(newArr));

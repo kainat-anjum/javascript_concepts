@@ -19,3 +19,18 @@ for (var i = 0; i < obj.length; i++) {
 }
 console.log(result);
 
+
+//use indexOf
+
+var filtered= obj.filter((name, id) => obj.indexOf(name) === id);
+console.log("filtered",filtered)
+
+
+console.log(obj.filter((name,id)=>obj.indexOf(name)==id))
+
+var a
+console.log(a)
+
+var x={foo:1}
+delete x.foo
+console.log (x.foo)

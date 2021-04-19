@@ -26,3 +26,12 @@ var filterArray = (data) => {
   return data.filter((value, index) => data.indexOf(value) === index);
 };
 console.log("filtered array:", filterArray(array));
+
+var filterItem = (data, item) => {
+  return data.filter(
+    (value, index) =>  data.indexOf(item) !== index
+  );
+};
+
+var newArr = [2, 3, 4, 5, 6, 7];
+console.log("Filter specific value", filterItem(newArr, 4));

@@ -6,7 +6,7 @@ var uniqueElements = (data) => {
   return data.filter((value, index) => data.indexOf(value) === index).length;
 };
 
-console.log(uniqueElements(array));
+// console.log(uniqueElements(array));
 
 //preferred way
 const set = [...new Set(array)];
